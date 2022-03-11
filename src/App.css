@@ -8,20 +8,16 @@
 }
 
 .App {
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-}
-
-.gridBlock {
-    width: 100px;
-    height: 50px;
-    border: 3px solid black;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .todos {
-    width: 500px;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -46,20 +42,19 @@
 }
 
 .todo_title {
-    width: 250px;
     font-family: 'Fredoka', sans-serif;
     font-size: 20px;
 }
 
 .todo_info {
-    width: 330px;
+    width: 91%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .todo_info > button {
-    width: 120px;
+    width: 41%
 }
 
 .todo_form {
@@ -76,4 +71,51 @@
     font-size: 20px;
     font-weight: 400;
     font-family: 'Fredoka', sans-serif;
+}
+.todo_title{
+    max-width: 145px;
+}
+
+
+@media (max-width: 620px) {
+    .todo_elem > button{
+        font-size: 16px;
+        padding:0;
+    }
+    .todo_elem > *{
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 444px) {
+    .todo_elem > *{
+        padding: 0 10px;
+    }
+    .todo_elem > button{
+        font-size: 12px;
+        border: none;
+        padding: 0 20px;
+    }
+    .todo_elem > button:hover{
+        border: none;
+    }
+    .todo_title{
+        font-size: 16px;
+    }
+    .todo_elem_number{
+        font-size: 15px;
+    }
+    .todo_form > h1{
+        font-size: 20px ;
+    }
+    .todo_info > input{
+        font-size: 16px;
+    }
+    .todo_info > button{
+        font-size: 15px;
+    }
+    .todo_title > div > input{
+        font-size: 15px
+
+    }
 }

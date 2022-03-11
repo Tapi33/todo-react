@@ -26,7 +26,7 @@ const TodoItem = (props) => {
                 checked={props.todo.completed}
                 onChange={() => props.toggle(props.todo)}
             />
-            <div className="todo_title">{editing ? <div><MyInput placeholder={props.todo.body} value={newTodoBody} onChange={e=> setNewTodoBody(e.target.value)}/></div>: props.todo.body}</div>
+            <div className="todo_title">{editing ? <div><MyInput style={{width:'100%'}} placeholder={props.todo.body} value={newTodoBody} onChange={e=> setNewTodoBody(e.target.value)}/></div>: props.todo.body}</div>
             <MyButton onClick={() => props.remove(props.todo)}>Delete!</MyButton>
             {editing ? <MyButton onClick={e => {setEditing(!editing); editingTodo(e)}}>Accept</MyButton> : <MyButton onClick={() => setEditing(!editing)}>Edit</MyButton>}
         </div>
