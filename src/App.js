@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import './App.css';
-import TodoItem from "./components/TodoItem";
 import TodoList from "./components/TodoList";
 import TodoForm from "./components/TodoForm";
 import MyModal from "./components/UI/modal/MyModal";
