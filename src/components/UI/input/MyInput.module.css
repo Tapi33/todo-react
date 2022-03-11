@@ -1,0 +1,18 @@
+.myInput:active {
+    outline: none;
+}
+
+.myInput:focus {
+    outline: none;
+}
+.myInput {
+    font-family: 'Fredoka', sans-serif;
+    width: 170px;
+    height: 10px;
+    border-radius: 2px;
+    color: black;
+    padding: 7px 0;
+    border-bottom: 1px solid lightcoral;
+    font-size: 20px;
+}
+

@@ -1,0 +1,15 @@
+.myButton{
+    width: 70px;
+    height: 30px;
+    background: transparent;
+    color: black;
+    border-bottom: 1px solid gainsboro;
+    margin-left: 10px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 18px;
+}
+.myButton:hover{
+    transition: 0.5s;
+    border-bottom:1px solid lightcoral;
+    color: lightcoral;
+}
