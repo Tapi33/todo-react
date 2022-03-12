@@ -27,7 +27,7 @@
 }
 
 .todo_elem {
-    height: 40px;
+    min-height: 40px;
     padding: 10px;
     width: 100%;
     margin: 15px 0;
@@ -73,8 +73,10 @@
     font-family: 'Fredoka', sans-serif;
 }
 .todo_title{
-    max-width: 145px;
+    max-width: 76px;
+    word-wrap: break-word;
 }
+
 
 
 @media (max-width: 620px) {
