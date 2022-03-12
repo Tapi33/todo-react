@@ -17,7 +17,7 @@
 }
 
 .todos {
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -73,7 +73,7 @@
     font-family: 'Fredoka', sans-serif;
 }
 .todo_title{
-    max-width: 76px;
+    max-width: 140px;
     word-wrap: break-word;
 }
 
@@ -93,15 +93,23 @@
     .todo_elem > *{
         padding: 0 10px;
     }
+    .todos{
+        width: 77%;
+    }
     .todo_elem > button{
         font-size: 12px;
         border: none;
         padding: 0 20px;
     }
+    .todo_elem > button > img{
+        width: 24px;
+    }
     .todo_elem > button:hover{
+        color: black;
         border: none;
     }
     .todo_title{
+        max-width: 76px;
         font-size: 16px;
     }
     .todo_elem_number{
