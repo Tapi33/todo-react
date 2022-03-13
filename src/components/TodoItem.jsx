@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import MyButton from "./UI/button/MyButton";
 import MyInput from "./UI/input/MyInput";
-import iconDelete from '../asset/delete.svg'
+import iconDelete from '../asset/delete.svg';
+import iconEdit from '../asset/edit.svg';
 import MyButtonUnderLine from "./UI/button/MyButtonUnderLine";
 
 const TodoItem = (props) => {
@@ -28,9 +29,21 @@ const TodoItem = (props) => {
                 checked={props.todo.completed}
                 onChange={() => props.toggle(props.todo)}
             />
-            <div className="todo_title">{editing ? <div><MyInput style={{width:'100%'}} placeholder={props.todo.body} value={newTodoBody} onChange={e=> setNewTodoBody(e.target.value)}/></div>: props.todo.body}</div>
+            <div className="todo_title">{editing ?
+                <div>
+                    <MyInput
+                        style={{width: '100%'}}
+                        placeholder={props.todo.body}
+                        value={newTodoBody}
+                        onChange={e => setNewTodoBody(e.target.value)}
+                    />
+                </div> : props.todo.body}</div>
             <MyButton onClick={() => props.remove(props.todo)}><img src={iconDelete} alt={'delete'}/></MyButton>
-            {editing ? <MyButtonUnderLine onClick={e => {setEditing(!editing); editingTodo(e)}}>Accept</MyButtonUnderLine> : <MyButtonUnderLine onClick={() => setEditing(!editing)}>Edit</MyButtonUnderLine>}
+            {editing ? <MyButtonUnderLine onClick={e => {
+                    setEditing(!editing);
+                    editingTodo(e)
+                }}>Accept</MyButtonUnderLine> :
+                <MyButton onClick={() => setEditing(!editing)}><img src={iconEdit} alt=""/></MyButton>}
         </div>
     );
 };
