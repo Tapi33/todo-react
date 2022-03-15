@@ -10,10 +10,10 @@
     align-items: center;
     justify-content: space-around;
 }
-.myButton:hover{
-    transition: 0.5s;
-    color: lightcoral;
+.myButton > img:hover{
+    width: 22px;
 }
+
 .myButtonUnderLine{
     width: 14%;
     height: 30px;

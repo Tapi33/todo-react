@@ -3,7 +3,6 @@ import MyButton from "./UI/button/MyButton";
 import MyInput from "./UI/input/MyInput";
 import iconDelete from '../asset/delete.svg';
 import iconEdit from '../asset/edit.svg';
-import MyButtonUnderLine from "./UI/button/MyButtonUnderLine";
 
 const TodoItem = (props) => {
     const [newTodoBody, setNewTodoBody] = useState('');
@@ -39,10 +38,11 @@ const TodoItem = (props) => {
                     />
                 </div> : props.todo.body}</div>
             <MyButton onClick={() => props.remove(props.todo)}><img src={iconDelete} alt={'delete'}/></MyButton>
-            {editing ? <MyButtonUnderLine onClick={e => {
+            {editing ? <MyButton
+                    onClick={e => {
                     setEditing(!editing);
                     editingTodo(e)
-                }}>Accept</MyButtonUnderLine> :
+                }}>Accept</MyButton> :
                 <MyButton onClick={() => setEditing(!editing)}><img src={iconEdit} alt=""/></MyButton>}
         </div>
     );
