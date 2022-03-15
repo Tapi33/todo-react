@@ -3,13 +3,29 @@
     height: 30px;
     background: transparent;
     color: black;
+    margin-left: 10px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.myButton:hover{
+    transition: 0.5s;
+    color: lightcoral;
+}
+.myButtonUnderLine{
+    width: 14%;
+    height: 30px;
+    background: transparent;
     border-bottom: 1px solid gainsboro;
+    color: black;
     margin-left: 10px;
     font-family: 'Fredoka', sans-serif;
     font-size: 18px;
 }
-.myButton:hover{
+.myButtonUnderLine:hover{
     transition: 0.5s;
-    border-bottom:1px solid lightcoral;
+    border-bottom: 1px solid lightcoral;
     color: lightcoral;
 }

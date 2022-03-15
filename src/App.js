@@ -4,6 +4,7 @@ import TodoList from "./components/TodoList";
 import TodoForm from "./components/TodoForm";
 import MyModal from "./components/UI/modal/MyModal";
 import MyButton from "./components/UI/button/MyButton";
+import iconAdd from './asset/add.svg'
 
 
 function App() {
@@ -42,7 +43,7 @@ function App() {
 
   return (
     <div className="App">
-        <MyButton style={{width:'200px', marginBottom:'50px'}} onClick={()=>setModal(true)}>Создать пост</MyButton>
+        <MyButton style={{width:'150px', margin:'30px 0'}} onClick={()=>setModal(true)}><img src={iconAdd} alt=""/>Add New Task</MyButton>
         <MyModal visible={modal} setVisible={setModal}>
             <TodoForm create={createNewTodo}/>
         </MyModal>
