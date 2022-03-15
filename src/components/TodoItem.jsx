@@ -3,7 +3,7 @@ import MyButton from "./UI/button/MyButton";
 import MyInput from "./UI/input/MyInput";
 
 const TodoItem = (props) => {
-    const [newTodoBody, setNewTodoBody] = useState('')
+    const [newTodoBody, setNewTodoBody] = useState('');
     const [editing, setEditing] = useState(false);
 
     let classes = ['todo_elem'];
